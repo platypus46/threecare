@@ -125,13 +125,13 @@ const CollapsiblePanel: React.FC<CollapsiblePanelProps> = ({ title, isOpen, onTo
                   backdrop-blur-md bg-opacity-90">
       <button
         onClick={onToggle}
-        className="w-full px-4 py-3 flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition-colors"
+        className="w-full px-4 py-3 flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition-colors text-gray-900"
       >
-        <h2 className="font-bold text-base md:text-lg">{title}</h2>
+        <h2 className="font-bold text-base md:text-lg text-gray-900">{title}</h2>
         {isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
       </button>
       {isOpen && (
-        <div className="p-4">
+        <div className="p-4 text-gray-900">
           {children}
         </div>
       )}
